@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>컨베이어 분류 퍼즐 — Loop Sort Factory</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hud">
+  <div class="hud-item"><span class="label">점수</span><span id="score" class="val">0</span></div>
+  <div class="hud-item"><span class="label">레벨</span><span id="level" class="val">1</span></div>
+  <div class="hud-item"><span class="label">콤보</span><span id="combo" class="val">x1</span></div>
+  <div class="hud-item"><span class="label">목숨</span><span id="lives" class="val">❤❤❤</span></div>
+</header>
+
+<main class="game">
+  <div id="conveyor" class="conveyor">
+    <div class="belt-line"></div>
+  </div>
+  <p class="hint">제품을 터치 → 같은 색 분류함에 터치!</p>
+  <div id="bins" class="bins"></div>
+</main>
+
+<div id="overlay" class="overlay">
+  <div class="overlay-box">
+    <h1 id="ovTitle">🏭 컨베이어 분류 퍼즐</h1>
+    <p id="ovDesc">흘러오는 제품을 같은 색 분류함에 넣어라!<br />놓치거나 틀리면 목숨 -1 · 10개 분류마다 레벨업</p>
+    <button id="startBtn" class="btn">▶ 시작하기</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
